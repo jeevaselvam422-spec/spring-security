@@ -8,10 +8,12 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
 import com.spring.security.spring_security.entity.User;
 import com.spring.security.spring_security.repository.UserRepository_I;
 
+@Service
 public class CustomUserDetailsService implements UserDetailsService {
 
 	private final UserRepository_I userRepository;
